@@ -1,0 +1,350 @@
+//Base rules 
+div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,label,select,input,textarea,address {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  list-style: none;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+
+body {
+  color: #656565;
+}
+.h1 {
+  font-size: 26px;
+}
+
+.h2 {
+  text-align: center;
+  position: relative;
+  margin-bottom: 50px;
+  &:after {
+    position: absolute;
+    content: "";
+    width: 400px;
+    height: 1px;
+    display: inline-block;
+    background-color: #656565;
+    bottom: -30px;
+    left: 50%;
+    margin-left: -200px;
+  }
+}
+
+.sub-header {
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+section {
+  padding: 50px 0;
+}
+
+.light-section {
+  background-color: white;
+}
+.gray-section {
+  background-color: #ededee;
+}
+
+.color-section {
+  background-color: #cedfef;
+}
+
+.hr {
+  width: 400px;
+  height: 1px;
+  background-color: #656565;
+  margin: 10px auto;
+  //margin: 10px 0;
+
+
+}
+
+footer {
+  .top-footer {
+    padding: 50px 0;
+    background-color: #585858;
+    color: white;
+    font-size: 16px;
+    a {
+      color: white;
+      text-decoration: none;
+    }
+    h3 {
+      margin-bottom: 15px;
+      font-size: 20px;
+      font-weight: 600;
+    }
+    ul {
+      margin-bottom: 15px;
+    }
+  }
+  .bottom-footer {
+
+    padding: 30px 0;
+    background-color: #414141;
+    color: #989898;
+    p {
+      font-size: 13px;
+    }
+    ul {
+      li {
+        float: left;
+        &:first-child {
+          border-right: solid 1px;
+        }
+        a {
+          padding: 0 10px;
+          color: #989898;
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}
+
+
+.image-w100 {
+  width: 100%;
+  height: auto;
+}
+
+
+
+
+
+
+//Layout rules 
+
+//Modules rules
+
+.card {
+  .wrap-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #e19744;
+    display: inline-block;
+  }
+  h3 {
+    font-weight: 600;
+    margin: 20px 0;
+  }
+  p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  a {
+    font-weight: 600;
+    font-size: 18px;
+    color: #656565;
+  }
+}
+
+.card-advantage {
+  text-align: center;
+}
+
+.card-how-it-works {
+  padding-left: 50px;
+  padding-top: 70px;
+  .header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    h3 {
+      margin-left: 10px;
+    }
+  }
+}
+
+.button {
+  padding: 15px 40px;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  background-color: #e19744;
+  font-size: 18px;
+}
+
+.text-link {
+  text-decoration: underline;
+}
+
+.welcome-screen {
+  background-color: #4a89bb;
+  color: white;
+  img {
+    width: 100%;
+    height: auto;
+  }
+  h1 {
+    margin-bottom: 50px;
+  }
+  .button {
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-bottom: 20px;
+  }
+  a {
+    color: white;
+  }
+  p {
+    margin-bottom: 30px;
+  }
+}
+
+
+.list-logos {
+  li {
+    display: inline-block;
+    img {
+      padding: 10px;
+    }
+  }
+}
+
+.marked-list {
+  li {
+    font-size: 16px;
+    padding: 10px 0 10px 40px;
+    position: relative;
+    &:before {
+      position: absolute;
+      content: "\f00c";
+      font-family: FontAwesome;
+      color: white;
+      text-align: center;
+      line-height: 30px;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      display: inline-block;
+      background-color: #e19744;
+      top: 50%;
+      margin-top: -15px;
+      left: 0;
+    }
+  }
+}
+
+
+.form-free-lesson {
+  background-color: white;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+  input, select {
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 16px;
+    padding: 10px 5px;
+    border-radius: 5px;
+    border: solid 1px #d9d9d9;
+    &:focus, &:hover, &:active {
+      border: solid 1px #39242b;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+  }
+  button[type="submit"] {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: #39242b;
+    margin-bottom: 10px;
+  }
+  p {
+    font-style: italic;
+  }
+}
+
+//State rules
+
+//Theme rules
+
+
+.accordion {
+  .panel-title {
+    font-size: 22px;
+    font-weight: 600;
+    a {
+      padding: 20px 0;
+      display: block;
+      font-size: 22px;
+      &:hover {
+        text-decoration: none;
+      }
+      i {
+        font-size: 14px;
+        top: -1px;
+      }
+    }
+  }
+}
+
+.panel-title {
+  a[aria-expanded="true"] {
+    .glyphicon-plus { display: none}
+  }
+  a[aria-expanded="false"] {
+    .glyphicon-minus { display: none}
+  }
+}
+
+//plans
+
+.plans {
+  .panel-title {
+    font-size: 28px;
+    margin: 10px 0;
+  }
+  .plan.featured {
+    transform: scale(1.1);
+    h4 small {
+      color: #cccccc;
+    }
+  }
+  .plan{
+    box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+    font-size: 16px;
+    .cta {
+      text-align: center;
+      .button {
+        margin: 10px 0;
+      }
+      p {
+        font-style: italic;
+        margin-bottom: 5px;
+        font-size: 14px;
+        color: #666;
+      }
+
+    }
+  }
+  .wrap-plans {
+    margin: 50px 0;
+  }
+}
+
+.demo-request-text {
+  color: black;
+}
+
+.roi-calculator {
+  font-size: 16px;
+  .panel-title {
+    font-size: 18px;
+  }
+}
