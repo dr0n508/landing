@@ -40,6 +40,9 @@ body {
   .sub-navbar .nav li a {
     color: black;
     font-size: 16px; }
+    @media only screen and (max-width: 992px) {
+      .sub-navbar .nav li a {
+        font-size: 14px; } }
 
 .navbar-brand {
   width: 50px;
@@ -134,6 +137,9 @@ footer .bottom-footer {
     .card-how-it-works .header h3 {
       margin-left: 10px; }
 
+.how-it-works .row {
+  margin-bottom: 40px; }
+
 .button {
   padding: 15px 40px;
   display: inline-block;
@@ -141,6 +147,9 @@ footer .bottom-footer {
   text-decoration: none;
   background-color: #e19744;
   font-size: 18px; }
+  .button:hover {
+    color: white;
+    text-decoration: none; }
 
 .text-link {
   text-decoration: underline; }

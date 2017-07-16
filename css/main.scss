@@ -57,6 +57,9 @@ body {
       a {
         color: black;
         font-size: 16px;
+        @media only screen and (max-width: 992px) {
+          font-size: 14px;
+        }
       }
     }
   }
@@ -204,6 +207,12 @@ footer {
   }
 }
 
+.how-it-works {
+  .row {
+    margin-bottom: 40px;
+  }
+}
+
 .button {
   padding: 15px 40px;
   display: inline-block;
@@ -211,6 +220,10 @@ footer {
   text-decoration: none;
   background-color: #e19744;
   font-size: 18px;
+  &:hover {
+    color: white;
+    text-decoration: none;
+  }
 }
 
 .text-link {
